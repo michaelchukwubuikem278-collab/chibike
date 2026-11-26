@@ -1,0 +1,669 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+
+/* TOP HEADER */
+.top_header {
+    width: 100%;
+    height: 2.3rem;
+    background-color: #f1f1f1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 9%;
+}
+
+.sell {
+    color: #f68b1e;
+    font-size: 14px;
+}
+
+.sell span {
+    background-color: #f68b1e;
+    color: white;
+    border-radius: 50%;
+}
+
+.top_brands {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.top_brands h3 {
+    font-size: 14px;
+    color: #333;
+}
+
+.top_brands h3:nth-child(2),
+.top_brands h3:nth-child(3) {
+    color: #bbb;
+}
+
+.top_brands span {
+    color: #f68b1e;
+}
+
+
+/* MAIN NAVIGATION */
+header {
+    width: 100%;
+    background-color: white;
+}
+
+.main_nav {
+    width: 82%;
+    min-height: 5rem;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+
+/* LOGO */
+.logo {
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: #282828;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #f68b1e;
+    font-size: 1.7rem;
+}
+
+
+/* SEARCH BAR */
+.search_box {
+    height: 3.5rem;
+    flex: 1;
+    max-width: 45rem;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #f1f1f1;
+    border-radius: 2rem;
+    padding-left: 1rem;
+}
+
+.search_icon {
+    font-size: 2rem;
+    color: #333;
+}
+
+.search_box input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}
+
+.search_box button {
+    height: 3rem;
+    padding: 0 1.5rem;
+
+    border: none;
+    border-radius: 2rem;
+
+    background-color: #f68b1e;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* ACCOUNT, HELP AND CART */
+.nav_item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: #333;
+    font-size: 1rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.nav_item span {
+    font-size: 1.5rem;
+}
+
+.nav_item small {
+    font-size: 1rem;
+}
+
+
+/* CATEGORY NAVIGATION */
+.category_nav {
+    width: 82%;
+    min-height: 3rem;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.category_nav::-webkit-scrollbar {
+    display: none;
+}
+
+.category_nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+
+/* MAIN CONTENT */
+main {
+    width: 100%;
+    padding: 1.2rem 0;
+}
+
+
+/* HERO BANNER */
+.hero {
+    width: 82%;
+    height: 25rem;
+    margin: auto;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 1.2rem;
+
+    background: linear-gradient(
+        110deg,
+        #080808,
+        #151020
+    );
+
+    color: white;
+}
+
+
+/* HERO TEXT */
+.hero_text {
+    width: 48%;
+    padding-left: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.hero_text > h2:first-child {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.hero_text > h1 {
+    color: #ff5a0a;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.hero_text > h2 span {
+    color: #ff5a0a;
+}
+
+.top_deal {
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.built {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.built span {
+    display: block;
+    color: #ff5a0a;
+}
+
+
+/* DISCOUNT */
+.discount {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.discount strong {
+    background-color: white;
+    color: #111;
+
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+
+    font-size: 1.5rem;
+}
+
+.discount small {
+    color: #ccc;
+}
+
+
+/* HERO PRODUCTS */
+.hero_products {
+    width: 48%;
+    height: 100%;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orange_circle {
+    width: 22rem;
+    height: 22rem;
+
+    background-color: #ff5000;
+    border-radius: 50%;
+
+    position: absolute;
+    right: 20%;
+    top: 8%;
+}
+
+
+/* PRODUCT IMAGE POSITIONS */
+.hero_products img {
+    position: absolute;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.coffee {
+    width: 30%;
+    height: 55%;
+    left: 12%;
+    top: 27%;
+}
+
+.dispenser {
+    width: 32%;
+    height: 75%;
+    left: 35%;
+    top: 10%;
+}
+
+.cooker {
+    width: 30%;
+    height: 42%;
+    left: 22%;
+    bottom: 5%;
+}
+
+.power {
+    width: 32%;
+    height: 40%;
+    right: 25%;
+    bottom: 3%;
+}
+
+.juicer {
+    width: 25%;
+    height: 50%;
+    right: 8%;
+    bottom: 7%;
+}
+
+
+/* SLIDER DOTS */
+.slider_dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    background-color: #888;
+    padding: 0.3rem;
+    border-radius: 2rem;
+}
+
+.slider_dots span {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.slider_dots .active {
+    width: 2rem;
+    border-radius: 1rem;
+    background-color: #333;
+}
+
+
+/* DEALS SECTION */
+.deals {
+    width: 82%;
+    margin: 1rem auto;
+
+    display: flex;
+    gap: 1rem;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
+.deals::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* DEAL CARDS */
+.deal_card {
+    min-width: 12.5rem;
+    height: 12.5rem;
+
+    border-radius: 1.3rem;
+    background: linear-gradient(
+        to bottom,
+        #424242,
+        #555
+    );
+
+    color: white;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.7rem;
+}
+
+.deal_card h3 {
+    width: 100%;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.deal_card h3 span {
+    float: right;
+    color: #aaa;
+    font-size: 1.2rem;
+}
+
+.deal_card img {
+    width: 75%;
+    height: 6.5rem;
+    object-fit: contain;
+}
+
+.deal_card strong {
+    width: 90%;
+    padding: 0.4rem;
+
+    text-align: center;
+    border-radius: 2rem;
+
+    background-color: white;
+    color: #222;
+    font-size: 0.75rem;
+}
+
+
+/* JUMIA FORCE CARD */
+.jumia_force {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.jumia_force span {
+    display: block;
+}
+
+.deal_card h1 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.deal_card > h3:last-child {
+    text-align: center;
+}
+
+
+/* RED DEAL CARD */
+.deal_card.red {
+    background: linear-gradient(
+        135deg,
+        #ff3d29,
+        #ff776b
+    );
+}
+
+
+/* TABLET RESPONSIVENESS */
+@media (max-width: 1100px) {
+
+    .main_nav,
+    .category_nav,
+    .hero,
+    .deals {
+        width: 94%;
+    }
+
+    .main_nav {
+        gap: 0.8rem;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .nav_item {
+        font-size: 0.85rem;
+    }
+
+    .category_nav {
+        justify-content: flex-start;
+    }
+}
+
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 700px) {
+
+    .top_header {
+        padding: 0 1rem;
+    }
+
+    .top_brands {
+        display: none;
+    }
+
+    .main_nav {
+        width: 95%;
+        min-height: 9rem;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+
+        padding: 0.7rem 0;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .search_box {
+        width: 100%;
+        max-width: none;
+        height: 3rem;
+    }
+
+    .search_box input {
+        font-size: 0.8rem;
+    }
+
+    .search_box button {
+        height: 2.6rem;
+        padding: 0 1rem;
+        font-size: 0.8rem;
+    }
+
+    .nav_item {
+        display: none;
+    }
+
+    .category_nav {
+        width: 95%;
+        min-height: 3rem;
+        gap: 1.3rem;
+    }
+
+    .category_nav a {
+        font-size: 0.8rem;
+    }
+
+    main {
+        padding-top: 0.7rem;
+    }
+
+    .hero {
+        width: 95%;
+        height: 18rem;
+        border-radius: 0.8rem;
+    }
+
+    .hero_text {
+        width: 55%;
+        padding-left: 1rem;
+    }
+
+    .hero_text > h2:first-child {
+        font-size: 1rem;
+    }
+
+    .hero_text > h1 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .top_deal {
+        font-size: 0.5rem;
+        letter-spacing: 0.08rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .built {
+        font-size: 1.5rem;
+    }
+
+    .discount {
+        gap: 0.4rem;
+    }
+
+    .discount strong {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .discount small {
+        font-size: 0.5rem;
+    }
+
+    .hero_products {
+        width: 45%;
+    }
+
+    .orange_circle {
+        width: 9rem;
+        height: 9rem;
+        right: 5%;
+        top: 25%;
+    }
+
+    .hero_products img {
+        max-height: 65%;
+    }
+
+    .slider_dots {
+        bottom: 0.5rem;
+        gap: 0.4rem;
+    }
+
+    .deals {
+        width: 95%;
+        gap: 0.7rem;
+        padding: 0.5rem;
+    }
+
+    .deal_card {
+        min-width: 9rem;
+        height: 10rem;
+        border-radius: 1rem;
+    }
+
+    .deal_card h3 {
+        font-size: 0.7rem;
+    }
+
+    .deal_card img {
+        height: 5rem;
+    }
+
+    .deal_card strong {
+        font-size: 0.6rem;
+    }
+
+    .deal_card h1 {
+        font-size: 1.2rem;
+    }
+}
+
